@@ -8,6 +8,12 @@ const PORT = 5000
 // Your connection url from mongo
 const CONNECTION_URL = ''
 
+const app = express()
+app.use(express.json())
+app.use(express.static('static'))
+app.use(fileUpload({}))
+app.use('/api', router)
+
 const startApp = () => {
   try {
     app.listen(PORT, async () => {
