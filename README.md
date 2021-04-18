@@ -1,1 +1,1 @@
-# simple_example_server_for_students
+Простой сервак для студентов на express + mongo (взято из курса)
